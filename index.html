@@ -1,89 +1,150 @@
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ScentDesire — katalog ofert</title>
-<style>
-  
-<p style="background:#fff3cd; color:#142b4a; padding:14px; border-radius:8px; text-align:center; font-weight:bold; border:2px solid #d6ad45;">
-  Kontakt i zamówienia:
-  <br>
-  scentdesirepl@proton.me
-</p>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScentDesire — katalog ofert</title>
+  <meta name="description" content="Katalog ofert ScentDesire — testery perfum, produkty sklepowe i kosmetyki.">
+  <style>
+    * { box-sizing: border-box; }
 
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f5f6f8;color:#202b3c}
-header{background:#111e35;color:white;padding:35px 20px;text-align:center}
-header h1{margin:0;font-size:34px;letter-spacing:2px}
-header p{color:#d6deeb}
-main{max-width:900px;margin:auto;padding:22px}
-.intro{text-align:center;padding:20px 0}
-.categories{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-.category{background:white;padding:23px 16px;border-radius:12px;text-decoration:none;color:#202b3c;border:1px solid #e2e6ed}
-.category h2{font-size:18px;margin:0 0 8px}
-.category p{font-size:14px;color:#697386;margin:0}
-.contact{background:#111e35;color:white;text-align:center;padding:25px;border-radius:12px;margin-top:24px}
-.contact a{display:inline-block;background:white;color:#111e35;padding:12px 20px;border-radius:7px;text-decoration:none;font-weight:bold}
-footer{text-align:center;color:#778092;font-size:12px;padding:25px}
-@media(max-width:480px){.categories{grid-template-columns:1fr}header h1{font-size:28px}}
-</style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #142b4a;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 16px 22px;
+      background: #ffffff;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 34px;
+      letter-spacing: 1px;
+    }
+
+    .intro {
+      color: #555;
+      margin: 0 auto 18px;
+      line-height: 1.6;
+      max-width: 600px;
+    }
+
+    .email-box {
+      display: inline-block;
+      margin: 8px auto;
+      padding: 12px 18px;
+      border: 2px solid #d6ad45;
+      border-radius: 8px;
+      background: #fff3cd;
+      color: #142b4a;
+      font-weight: bold;
+      overflow-wrap: anywhere;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 10px 16px 35px;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .category {
+      padding: 22px 18px;
+      border: 1px solid #e2e6eb;
+      border-radius: 12px;
+      background: #ffffff;
+      box-shadow: 0 3px 12px rgba(20, 43, 74, 0.07);
+    }
+
+    .category h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      color: #142b4a;
+    }
+
+    .category p {
+      margin: 0;
+      color: #606975;
+      line-height: 1.5;
+    }
+
+    footer {
+      padding: 24px 16px;
+      text-align: center;
+      background: #142b4a;
+      color: #ffffff;
+    }
+
+    footer p {
+      margin: 8px 0;
+    }
+
+    .footer-email {
+      color: #ffe08a;
+      font-size: 17px;
+      font-weight: bold;
+      overflow-wrap: anywhere;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 28px; }
+      .categories { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-<header>
-<h1>ScentDesire</h1>
-<p>Zapachy • Kosmetyki • Wyjątkowe oferty</p>
-</header>
-<main>
-<section class="intro">
-<h2>Nasze katalogi</h2>
-<p>Sprawdź aktualną ofertę i zapytaj o cenę wybranych produktów.</p>
-</section>
-<section class="categories">
-<a class="category" href="#testery">
-<h2>Testery perfum</h2>
-<p>Marki, zapachy i dostępne pojemności</p>
-</a>
-<a class="category" href="#produkty">
-<h2>Produkty sklepowe</h2>
-<p>Aktualna oferta produktów</p>
-</a>
-<a class="category" href="#kosmetyki">
-<h2>Kosmetyki</h2>
-<p>Lista dostępnych kosmetyków</p>
-</a>
-<a class="category" href="#nowosci">
-<h2>Nowości i okazje</h2>
-<p>Sprawdź najnowsze oferty</p>
-</a>
-</section>
-<section id="testery" class="contact">
-<h2>Testery perfum</h2>
-<p>Zapytaj nas o dostępność i ceny.</p>
-<a href="mailto:scentdesirepl@proton.me">Zapytaj o ofertę</a>
-</section>
-<section id="produkty" class="contact">
-<h2>Produkty sklepowe</h2>
-<p>Zapytaj nas o dostępność i ceny.</p>
-<a href="mailto:scentdesirepl@proton.me">Zapytaj o ofertę</a>
-</section>
-<section id="kosmetyki" class="contact">
-<h2>Kosmetyki</h2>
-<p>Zapytaj nas o dostępność i ceny.</p>
-<a href="mailto:scentdesirepl@proton.me">Zapytaj o ofertę</a>
-</section>
-<section id="nowosci" class="contact">
-<h2>Nowości i okazje</h2>
-<p>Zapytaj nas o aktualną ofertę.</p>
-<a href="mailto:scentdesirepl@proton.me">Zapytaj o ofertę</a>
-</section>
-</main>
-  
-<footer style="background:#142b4a; color:white; padding:22px; text-align:center; margin-top:30px; border-radius:8px;">
-  <p style="font-weight:bold; margin-bottom:8px;">ScentDesire — kontakt i zamówienia</p>
-  <p style="font-size:17px; color:#ffe08a;">scentdesirepl@proton.me</p>
-</footer>
 
-<footer>ScentDesire © 2026</footer>
+  <header>
+    <h1>ScentDesire</h1>
+    <p class="intro">
+      Zapoznaj się z naszą ofertą. Aby uzyskać ceny i złożyć zamówienie,
+      napisz do nas na adres e-mail.
+    </p>
+    <div class="email-box">
+      Kontakt i zamówienia:<br>
+      scentdesirepl@proton.me
+    </div>
+  </header>
+
+  <main>
+    <section class="categories">
+      <article class="category">
+        <h2>Testery perfum</h2>
+        <p>Zapoznaj się z dostępną ofertą testerów perfum.</p>
+      </article>
+
+      <article class="category">
+        <h2>Produkty sklepowe</h2>
+        <p>Sprawdź ofertę produktów dostępnych w sprzedaży.</p>
+      </article>
+
+      <article class="category">
+        <h2>Kosmetyki</h2>
+        <p>Poznaj naszą ofertę kosmetyków.</p>
+      </article>
+
+      <article class="category">
+        <h2>Nowości i okazje</h2>
+        <p>Sprawdzaj nowości oraz aktualne propozycje.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>ScentDesire — kontakt i zamówienia</strong></p>
+    <p class="footer-email">scentdesirepl@proton.me</p>
+  </footer>
+
 </body>
 </html>
